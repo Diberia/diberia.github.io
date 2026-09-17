@@ -1,0 +1,60 @@
+<!--Nydiska dictionary-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Nydiska Dictionary</title>
+
+        <link rel="stylesheet" href="dictionarynd.css"/>
+        <link rel="icon" href="icon.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                Nydiska Dictionary
+            </div>
+
+            <nav>
+                <a href="index.html">Wiki Home</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Nydiska Dictionary</h1>
+
+            <p>
+                A Dictionary for the Nydiska Language
+            </p>
+
+            <div class="search">
+                <input id="searchInput" type="text" placeholder="Search for a word..."/>
+
+                <button onclick="searchWord()" id="butt">Search</button>
+            </div>
+
+            <div id="show'er">
+                <div class="word" id="i">
+                    <h2>Eg</h2>
+
+                    <span class="part-of-speech">
+                        [Pronome]
+                    </span>
+
+                    <p>
+                        <strong>Meaning:</strong>
+                        I (1st person singular)
+                    </p>
+
+                    <p>
+                        <strong>Pronounciation:</strong>
+                        /ˈɛg/
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <script src="dictionarynd.js"></script>
+    </body>
+</html>

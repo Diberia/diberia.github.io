@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Diberian Time</title>
+
+        <link rel="stylesheet" href="time.css"/>
+        <link rel="icon" href="icon.png"/>
+    </head>
+    <body>
+        <main class="clock-container">
+            <section class="clock-card diberian">
+                <p class="label"><a href="Years_and_Dates.md" target="_blank">Diberian</a> <a href="Time.md" target="_blank">Time</a></p>
+
+                <div id="diberian-time" class="time">
+                    --:--:--
+                </div>
+
+                <div id="diberian-date" class="date">
+                    Calculating...
+                </div>
+            </section>
+
+            <section class="clock-card gregorian">
+                <p class="label"><a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank">Gregorian</a> <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time" target="_blank">Time</a></p>
+
+                <div id="gregorian-time" class="time">
+                    --:--:--
+                </div>
+
+                <div id="gregorian-date" class="date">
+                    Calculating...
+                </div>
+
+                <button id="time-format-toggle" class="format-button" type="button">Can't read it? (Dear Americans?)</button>
+                <a href="index.html" class="other-button">The Wiki</a>
+            </section>
+        </main>
+
+        <script src="time.js"></script>
+    </body>
+</html>
