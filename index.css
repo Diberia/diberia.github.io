@@ -154,3 +154,13 @@ h3 {
 
     scale: 0.7;
 }
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .infobox {
+        display: none;
+    }
+}
