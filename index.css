@@ -160,7 +160,23 @@ h3 {
         grid-template-columns: 1fr;
     }
 
-    .infobox {
-        display: none;
+    .topbar {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav {
+        margin-left: auto;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px 7px;
     }
 }
