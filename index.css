@@ -160,11 +160,6 @@ h3 {
         grid-template-columns: 1fr;
     }
 
-    .topbar {
-        padding: 8px 12px;
-        gap: 8px;
-    }
-
     .logo {
         font-size: 18px;
     }
