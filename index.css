@@ -157,7 +157,7 @@ h3 {
 
 @media (max-width: 900px) {
     .layout {
-        grid-template-columns: 180px 1fr;
+        grid-template-columns: 1fr;
     }
 
     .topbar {
