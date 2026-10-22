@@ -140,8 +140,20 @@ function updateGregorian(date) {
     }
 }
 
+function getStandardTimeDate(date) {
+    const januaryOffset = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
+    const julyOffset = new Date(date.getFullYear(), 6, 1).getTimezoneOffset();
+    const standardOffset = Math.max(januaryOffset, julyOffset);
+    const currentOffset = date.getTimezoneOffset();
+
+    const daylightSavingMinutes = standardOffset - currentOffset;
+
+    return new Date(date.getTime() - daylightSavingMinutes * 60 * 1000);
+}
+
 function updateDiberian(date) {
-    const diberian = calculateDiberianTime(date);
+    const standardTimeDate = getStandardTimeDate(date);
+    const diberian = calculateDiberianTime(standardTimeDate);
 
     const time = `${diberian.step}:` + `${String(diberian.beat).padStart(2, "0")}:` + `${String(diberian.tick).padStart(2, "0")}` + ` ${diberian.period}`;
 
