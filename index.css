@@ -157,25 +157,55 @@ h3 {
 
 @media (max-width: 900px) {
     .layout {
-        grid-template-columns: 1fr;
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+        padding: 20px, 16px;
+        gap: 20px;
+    }
+
+    .content {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .infobox {
+        min-width: 0;
+        max-width: 100%;
     }
 
     .topbar {
         width: 100%;
+        height: auto;
+        min-height: 60px;
+        padding: 10px 16px;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 
     .logo {
         font-size: 18px;
+        flex-shrink: 0;
     }
 
     nav {
         margin-left: auto;
         gap: 6px;
         flex-wrap: wrap;
+        justify-content: flex-end;
+        min-width: 0;
     }
 
     nav a {
         font-size: 14px;
         padding: 5px;
+    }
+
+    h1 {
+        font-size: 32px;
+        overflow-wrap: anywhere;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 }
