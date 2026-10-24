@@ -57,6 +57,14 @@ body {
     opacity: 0.6;
 }
 
+.timeZone {
+    margin: 0;
+
+    font-size: 1rem;
+
+    color: #ddd;
+}
+
 .time {
     font-size: clamp(3rem, 8vw, 5.5rem);
 

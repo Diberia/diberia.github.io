@@ -170,6 +170,53 @@ document.getElementById("time-format-toggle").addEventListener("click", () => {
     updateClock();
 });
 
+// Aka Daylight saving time
+function isSummerTime(date) {
+    const year = date.getFullYear();
+
+    const january = new Date(year, 0, 1);
+    const july = new Date(year, 6, 1);
+
+    const standardOff = Math.max(january.getTimezoneOffset(), july.getTimezoneOffset());
+
+    return date.getTimezoneOffset() < standardOff;
+}
+
+function updateTimeZone() {
+    const now = new Date();
+
+    // Get the full name e.g. Europe/London
+    const timezoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    // Get UTC offset, e.g. UTC+2
+    const offset = new Intl.DateTimeFormat("en-GB", { timeZone: timezoneName, timeZoneName: "shortOffset" }).formatToParts(now).find(part => part.type === "timeZoneName").value;
+
+    // Get abbreviation e.g. CET
+    const abbrevii = new Intl.DateTimeFormat("en-GB", { timeZone: timezoneName, timeZoneName: "short" }).formatToParts(now).find(part => part.type === "timeZoneName").value;
+
+    document.getElementById("timeZoneGregorianRaw").textContent = `UTC${offset.replace("GMT", "")} (${abbrevii})`;
+
+    if (isSummerTime(now)) {
+        const januarii = new Date(now.getFullYear(), 0, 1);
+        const julii = new Date(now.getFullYear(), 6, 1);
+
+        const standOff = Math.max(januarii.getTimezoneOffset(), julii.getTimezoneOffset());
+
+        const standartMinutes = -standOff;
+
+        const sign = standartMinutes >= 0 ? "+" : "-";
+        const absMinutes = Math.abs(standartMinutes);
+        const hours = Math.floor(absMinutes / 60);
+        const minutes = absMinutes % 60;
+
+        const formattedOff = sign + hours + (minutes ? ":" + String(minutes).padStart(2, "0") : "");
+
+        document.getElementById("timeZoneDiberian").textContent = `UTC${formattedOff} (Standard Time)`;
+    } else {
+        document.getElementById("timeZoneDiberian").textContent = `UTC${offset.replace("GMT", "")} (${abbrevii})`;
+    }
+}
+
 function updateClock() {
     const now = new Date();
 
@@ -180,4 +227,8 @@ function updateClock() {
 
 updateClock();
 
+updateTimeZone();
+
 setInterval(updateClock, 100);
+
+setInterval(updateTimeZone, 300000); // In case Timezone gets changed
