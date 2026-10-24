@@ -399,5 +399,21 @@
         </div>
 
         <script src="languages.js"></script>
+        <script>
+            const topbar = document.querySelector('.topbar');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                    topbar.classList.add('hidden');
+                } else {
+                    topbar.classList.remove('hidden');
+                }
+
+                lastScrollY = currentScrollY;
+            }, { passive: true });
+        </script>
     </body>
 </html>
