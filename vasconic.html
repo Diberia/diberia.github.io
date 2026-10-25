@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Proto-Vasconic</title>
+
+        <link rel="stylesheet" href="vasconic.css"/>
+        <link rel="icon" href="icon.png"/>
+    </head>
+    <body>
+        <header class="topbar">
+            <div class="logo">
+                A Reconstruction
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="languages.html">Languages</a>
+            </nav>
+        </header>
+        <div class="layout">
+            <main class="content">
+                <article>
+                    <h1>Proto-Vasconic</h1>
+
+                    <p class="intro">
+                        The Speculative Reconstruction of Proto-Vasconic
+                    </p>
+
+                    <section id="">
+                        [In development]
+                    </section>
+                </article>
+            </main>
+        </div>
+
+        <script src="vasconic.js"></script>
+        <script>
+            const topbar = document.querySelector('.topbar');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > lastScrollY && currentScrollY > 80) {
+                    topbar.classList.add('hidden');
+                } else {
+                    topbar.classList.remove('hidden');
+                }
+
+                lastScrollY = currentScrollY;
+            }, { passive: true });
+        </script>
+    </body>
+</html>
