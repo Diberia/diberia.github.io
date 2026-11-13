@@ -96,6 +96,11 @@ h3 {
     font-family: Georgia, serif;
 }
 
+.intro {
+    font-size: 18px;
+    color: #54595d;
+}
+
 @media (max-width: 900px) {
     .topbar {
         width: 100%;
