@@ -78,6 +78,13 @@ nav {
     padding: 30px;
 }
 
+.copyrightstuff {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #aaa;
+}
+
 h1 {
     font-family: Georgia, serif;
 

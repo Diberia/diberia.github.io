@@ -18,6 +18,13 @@ details {
     margin-bottom: 20px;
 }
 
+.copyrightstuff {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #aaa;
+}
+
 .topbar {
     height: 60px;
     background: #ffffff;
