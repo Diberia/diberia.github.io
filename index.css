@@ -10,6 +10,14 @@ body {
     line-height: 1.6;
 }
 
+details {
+    display: table;
+    border: 1px solid #aaa;
+    background: #f8f9fa;
+    padding: 12px 25px;
+    margin-bottom: 20px;
+}
+
 .topbar {
     height: 60px;
     background: #ffffff;
