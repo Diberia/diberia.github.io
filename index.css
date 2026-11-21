@@ -25,6 +25,10 @@ details {
     border: 1px solid #aaa;
 }
 
+.families {
+    border: 2px solid #202122;
+}
+
 .topbar {
     height: 60px;
     background: #ffffff;
