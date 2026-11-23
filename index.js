@@ -1,0 +1,1 @@
+window.alert("This project is unfinished and may change in the future. This site is finished once it is found under 'diberia.org'")
