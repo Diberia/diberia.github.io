@@ -25,6 +25,26 @@
             </nav>
         </header>
         <div class="layout">
+            <details open class="sidebar">
+                <summary>Contents</summary>
+
+                <ul>
+                    <li><a href="#grammar">Grammar</a></li>
+                    <li><strong>-</strong> <a href="#rootVerbs">Root verbs</a></li>
+                    <li><strong>-</strong> <a href="#verbClass">Verb classes</a></li>
+                    <li><strong>-</strong> <a href="#auxiliaryVerb">Auxiliary</a></li>
+                    <li><strong>-</strong> <a href="#verbTime">Tenses</a></li>
+                    <li><strong>-</strong> <a href="#Norikork">NOR</a></li>
+                    <li><a href="#writingsys">Writing System</a></li>
+                    <li><a href="#pronounciation">Pronunciation</a></li>
+                    <li><a href="#vocabulary">Vocabulary</a></li>
+                    <li><a href="#dictinfo">Dictionary</a></li>
+                    <li><a href="#etymology">Etymology</a></li>
+                    <li><a href="#dialects">Regional Variations</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#relations">Relations</a></li>
+                </ul>
+            </details>
             <main class="content">
                 <article>
                     <h1>Diberian Languages</h1>
@@ -35,22 +55,6 @@
                         Shanti on the other hand leans almost entirely into being a conlang. I proposed this language as a ritualistic language for the Diberian culture,<br>
                         because I assume that some might have moved eastwards, therefore adopting a Uralic language, which itself is already an assumption.
                     </p>
-
-                    <details open>
-                        <summary>Contents</summary>
-
-                        <ul>
-                            <li><a href="#grammar">Grammar</a></li>
-                            <li><a href="#writingsys">Writing System</a></li>
-                            <li><a href="#pronounciation">Pronunciation</a></li>
-                            <li><a href="#vocabulary">Vocabulary</a></li>
-                            <li><a href="#dictinfo">Dictionary</a></li>
-                            <li><a href="#etymology">Etymology</a></li>
-                            <li><a href="#dialects">Regional Variations</a></li>
-                            <li><a href="#usage">Usage</a></li>
-                            <li><a href="#relations">Relations</a></li>
-                        </ul>
-                    </details>
 
                     <section id="grammar">
                         <h2>Grammar of Diberian</h2>
@@ -94,16 +98,16 @@
                             They simply come after nouns.
                         </p>
 
-                        <h3>Root verbs, auxiliary verbs and verb classes</h3>
+                        <h3 id="rvavc">Root verbs, auxiliary verbs and verb classes</h3>
 
                         <p>
                             Unlike many other languages, Diberian has three verb classes, the auxiliary verbs and three verb time cases.<br>
                             Let's begin!<br><br>
-                            <strong>"Root Verbs:"</strong><br>
+                            <strong id="rootVerbs">"Root Verbs:"</strong><br>
                             Root verbs are the most basic forms of the verb (infinitive). Similar to English "to ...".<br>
                             On their own, they can also indicate passive or subordinate uses of a verb, as in "I eat, to be good".<br>
                             This corresponds to "ñgé adun giregan, ul² iran". Literally: "I eat, good to be", remember the "SOV" word order!<br><br>
-                            <strong>"Verb classes:"</strong><br>
+                            <strong id="verbClass">"Verb classes:"</strong><br>
                             Verb classes are mainly about "What else does this verb need?". There are three classes:<br>
                             - Class I -> Standalone verbs<br>
                             - Class II -> Auxiliary-requiring verbs<br>
@@ -117,13 +121,14 @@
                             Class II includes the most verbs, like "To bind" ("Lotgen"). These verbs require an auxiliary verb [More to them later] and are only conjugated for the time cases.<br>
                             Class III includes verbs like "To stack" ("Stabe"). These verbs require both an auxiliary verb and the auxiliary particle "ari". They are also only conjugated for time cases.<br><br>
                             
-                            <strong>"Auxiliary verbs:"</strong><br>
+                            <strong id="auxiliaryVerb">"Auxiliary verbs:"</strong><br>
 
                             There are four auxiliary verb groups:<br>
-                            - Identificational<br>
-                            - Stational<br>
-                            - Variable<br>
-                            - Subject-Object-agreeing suffixes (for transistive sentences only)<br><br>
+                            - Identificational (NOR)<br>
+                            - Stational (NOR)<br>
+                            - Variable (NOR)<br>
+                            - Subject-Object-agreeing suffixes (NOR-NORK)<br>
+                            - Subject-Object-agreeing suffixes (NOR-NORI & NOR-NORI-NORK)<br><br>
 
                             (See the <a href="dictionarydb.html">dictionary</a> for exact conjugations.)<br>
                             <strong>Identificational</strong> auxiliary verbs indicate a persons identity. For example, compare:<br>
@@ -138,32 +143,25 @@
                             identificational "igan", because "I know" represents a state someone is in.<br><br>
 
                             Basically "To be" acts as a Class I verb, when used for self-identification, as in "I am good" -> "(ñgé) ul² naður";<br>
-                            And as auxiliary verb, when paired with actual actions as in "I bind it" -> "ñgéik härð lotgen eðjurdut".<br><br>
+                            And as auxiliary verb, when paired with actual actions as in "I bind it" -> "ñgéik härð lotgen naðurðut".<br><br>
 
-                            When the verb is directly affecting the object, the auxiliary verb changes. Compare "ñgéik härð lotgen eðjurdut" (I bind it) with "ñgéik härð adun giregandut" (I eat it),<br>
-                            where "eðjur" (1st pers. sg. Unaffected. Direct. Present. Stational) changes to "giregan" (1st. per. Sg. Affected. Direct. Present.).<br><br>
+                            When the verb is directly affecting the object, the auxiliary verb changes. Compare "ñgéik härð lotgen naðurðut" (I bind it) with "ñgéik härð adun gireganðut" (I eat it),<br>
+                            where "naður" (1st pers. sg. Unaffected. Direct. Present. Stational) changes to "giregan" (1st. per. Sg. Affected. Direct. Present.).<br><br>
 
                             IMPORTANT: The variable auxiliaries are also the verb "To become"!<br><br>
 
                             Now, to compare:<br>
                             - Igan (Identificational as in "I am john")<br>
-                            - Eðjur (Stational and actual auxiliary verb for Class II and III verbs "I know")<br>
+                            - Naður (Stational and actual auxiliary verb for Class II and III verbs "I know")<br>
                             - Giregan (Affected and actual auxiliary verb for Class II and III verbs, which change the object "I eat")<br>
-                            - Eðjurdut / Giregandut (Stational and Affected auxiliary verbs with the Subject-Object-agreeing suffix "-dut". Used in transistive sentences "I know it / I eat it")<br><br>
-
-                            The Subject-Object-agreeing suffixes for the auxiliary verbs are, for example:<br>
-                            - [Possessive genitive + reflexive "furva"] (I do something to myself)<br>
-                            - -tut (I do something to you (singular "you"))<br>
-                            - -dut (I do something to it)<br>
-                            - [Possessive genitive of "we" + reflexive "furva"] (I do something to us)<br>
-                            - -ustet (I do something to you (all))<br>
-                            - -itut (I do something to them)<br><br>
+                            - Naðurðut / Giregandut (Stational and Affected auxiliary verbs with the Subject-Object-agreeing suffix "-dut". Used in transistive sentences "I know it / I eat it")<br>
+                            - Naðurnasjeiyu / Gireganasjeiyu (Stational and Affected auxiliary verbs with the Subject-Object-agreeing suffix "-nasjeiyu". NOR-NORI and NOR-NORI-NORK sentences)<br><br>
 
                             These suffixes are used only in transistive sentences, which means that the sentence must include at least one object.
                             Class I verbs also need these suffixes in transistive sentence as in "ðauhatut" (I have you).
                             This is because Diberian hates pronouns when they are not needed. (Further information under "<a href="#usage">Usage</a>")<br><br>
 
-                            <strong>"Verb time cases:"</strong><br>
+                            <strong id="verbTime">"Verb time cases:"</strong><br>
                             There are five time cases in total. Yet only three, for a single verb.:<br>
                             - Simple Present -> "I walk" [Main Verb: Present & Auxiliary Verb: Present]<br>
                             - Continuous Past -> "I was walking" [Main Verb: Present & Auxiliary Verb: Past]<br>
@@ -179,6 +177,16 @@
                             There are also abstract concepts possible as in [Main Verb: Future & Auxiliary Verb: Past].<br>
                             IMPORTANT: "I will have walked" is not an official Diberian time case... however, as seen before you can construct it with<br> 
                             [Main Verb: Future & Auxiliary Verb: Past]<br><br>
+
+                            <strong id="Norikork">"NOR-NORKLY-NORKA"!?!?</strong><br>
+                            Yes, Diberian uses a pretty similar auxiliary system to basque's NOR-NORI-NORK (What?-To whom?-Who?) system.<br>
+                            It is actually very understandable. NOR-NORI-NORK helps Diberian get rid of these silly Pronouns it doesn't like:<br><br>
+
+                            - "I am a Man" (Identificational NOR sentence)<br>
+                            - "I am good" (Stational NOR sentence)<br>
+                            - "I need you" (NOR-NORK sentence (because of the ergative "I"))<br>
+                            - "I am running to you" (NOR-NORI sentence (because now it is "to you", so technically dative))<br>
+                            - "I give it to you" (NOR-NORI-NORK sentence ("I" - NORK, "To you" - NORI and "It" - NOR))<br><br>
 
                             FULL CONJUGATION OF <strong>CLASS I</strong> VERB "TO HAVE" (Intransistive sentence):
 
@@ -477,7 +485,7 @@
                                 </tr>
                             </table><br>
 
-                            ALL FORMS OF <strong>SUBJECT-OBJECT-AGREEING SUFFIXES</strong>:
+                            ALL FORMS OF <strong>SUBJECT-OBJECT-AGREEING SUFFIXES</strong> (NOR-NORK):
 
                             <table class="tablething">
                                 <tr>
@@ -492,61 +500,129 @@
                                 <tr>
                                     <th>1st per. sg.</th>
                                     <td>~</td>
-                                    <td>-tut</td>
-                                    <td>-dut</td>
+                                    <td>-reitut</td>
+                                    <td>dut<br>-ðut</td>
                                     <td>~</td>
-                                    <td>-ustet</td>
-                                    <td>-itut</td>
+                                    <td>-reitustet</td>
+                                    <td>-ðitut</td>
                                 </tr>
                                 <tr>
                                     <th>2nd per. sg.</th>
                                     <td>-nasu</td>
                                     <td>~</td>
                                     <td>-ðusu</td>
-                                    <td>-iþusu</td>
+                                    <td>-heiþusu</td>
                                     <td>~</td>
                                     <td>-ðitusu</td>
                                 </tr>
                                 <tr>
                                     <th>3rd per. sg.</th>
-                                    <td>-au</td>
-                                    <td>-aisu</td>
+                                    <td>-njau</td>
+                                    <td>-reitu</td>
                                     <td>-ju</td>
-                                    <td>-ægu</td>
-                                    <td>-ætuse</td>
-                                    <td>-idu</td>
+                                    <td>-heiðu</td>
+                                    <td>-reituþre</td>
+                                    <td>-ðisju</td>
                                 </tr>
                                 <tr>
                                     <th>1st per. pl.</th>
                                     <td>~</td>
-                                    <td>-taitugu</td>
-                                    <td>-tugu</td>
+                                    <td>-reitugu</td>
+                                    <td>-ðuću</td>
                                     <td>~</td>
-                                    <td>-taitusegu</td>
-                                    <td>-ätugu</td>
+                                    <td>-reituþregu</td>
+                                    <td>-ðitugu</td>
                                 </tr>
                                 <tr>
                                     <th>2nd per. pl.</th>
-                                    <td>-aswe</td>
+                                    <td>-naswe</td>
                                     <td>~</td>
-                                    <td>-uzwe</td>
-                                    <td>-aituswe</td>
+                                    <td>-ðuzwe</td>
+                                    <td>-heiþuswe</td>
                                     <td>~</td>
-                                    <td>-ituswe</td>
+                                    <td>-ðituswe</td>
                                 </tr>
                                 <tr>
                                     <th>3rd per. pl.</th>
-                                    <td>-nðe</td>
-                                    <td>-sætute</td>
+                                    <td>-naþe</td>
+                                    <td>-reituþe</td>
                                     <td>-ðute</td>
-                                    <td>-gætuste</td>
-                                    <td>-saiturete</td>
+                                    <td>-heituðä</td>
+                                    <td>-reituþetä</td>
                                     <td>-ðituste</td>
                                 </tr>
                             </table><br>
 
+                            ALL FORMS OF <strong>SUBJECT-OBJECT-AGREEING SUFFIXES</strong> (NOR-NORI + NOR-NORI-NORK):
+
+                            <table class="tablething">
+                                <tr>
+                                    <th>Doing / Receiving</th>
+                                    <th>1st per. sg.</th>
+                                    <th>2nd per. sg.</th>
+                                    <th>3rd per. sg.</th>
+                                    <th>1st per. pl.</th>
+                                    <th>2nd per. pl.</th>
+                                    <th>3rd per. pl.</th>
+                                </tr>
+                                <tr>
+                                    <th>1st per. sg.</th>
+                                    <td>~</td>
+                                    <td>-nasjeiru</td>
+                                    <td>-nasjeiyu</td>
+                                    <td>~</td>
+                                    <td>-nasjeiswe</td>
+                                    <td>-nasjeigće</td>
+                                </tr>
+                                <tr>
+                                    <th>2nd per. sg.</th>
+                                    <td>-radzeit</td>
+                                    <td>~</td>
+                                    <td>-radzeiyu</td>
+                                    <td>-radzeigu</td>
+                                    <td>~</td>
+                                    <td>-radzeigće</td>
+                                </tr>
+                                <tr>
+                                    <th>3rd per. sg.</th>
+                                    <td>-reid</td>
+                                    <td>-reisu</td>
+                                    <td>-reiyu</td>
+                                    <td>-reigu</td>
+                                    <td>-reiswe</td>
+                                    <td>-reiye</td>
+                                </tr>
+                                <tr>
+                                    <th>1st per. pl.</th>
+                                    <td>~</td>
+                                    <td>-hädzeisu</td>
+                                    <td>-hädzeiyu</td>
+                                    <td>~</td>
+                                    <td>-hädzeiswe</td>
+                                    <td>-hädzeiće</td>
+                                </tr>
+                                <tr>
+                                    <th>2nd per. pl.</th>
+                                    <td>-raðseisjot</td>
+                                    <td>~</td>
+                                    <td>-raðseisjyo</td>
+                                    <td>-raðseisju</td>
+                                    <td>~</td>
+                                    <td>-raðseiće</td>
+                                </tr>
+                                <tr>
+                                    <th>3rd per. pl.</th>
+                                    <td>-reiþit</td>
+                                    <td>-reiþisu</td>
+                                    <td>-reiþjo</td>
+                                    <td>-reiþigu</td>
+                                    <td>-reiþiswe</td>
+                                    <td>-reiþje</td>
+                                </tr>
+                            </table><br>
+
                             You might notice that the reflexive agreements are missing. That is because Diberian uses "furva":<br>
-                            "Jéra furva adun giregandut" -> "I am eating myself"<br><br>
+                            "Jéra furva adun gireganðut" -> "I am eating myself"<br><br>
 
                             You take the 3rd per. sg. receiving suffix, corresponding to the "doing" subject and form the "possessive genitive" with
                             the reflexive pronoun "furva" into the subject.<br><br>
@@ -1391,17 +1467,17 @@
                         </p>
                     </section>
                 </article>
+                <footer class="copyrightstuff">
+                    Copyright (c) 2026 BeyondRealityOfficial.<br>
+                    Official repository: <a href="https://github.com/Diberia/diberia.github.io/">https://github.com/Diberia/diberia.github.io/</a>
+                </footer>
             </main>
-
-            <footer class="copyrightstuff">
-                Copyright (c) 2026 BeyondRealityOfficial.<br>
-                Official repository: <a href="https://github.com/Diberia/diberia.github.io/">https://github.com/Diberia/diberia.github.io/</a>
-            </footer>
         </div>
 
         <script src="languages.js"></script>
         <script>
             const topbar = document.querySelector('.topbar');
+            const side = document.querySelector('.sidebar');
             let lastScrollY = window.scrollY;
 
             window.addEventListener('scroll', () => {
@@ -1409,8 +1485,10 @@
 
                 if (currentScrollY > lastScrollY && currentScrollY > 80) {
                     topbar.classList.add('hidden');
+                    side.classList.remove('up')
                 } else {
                     topbar.classList.remove('hidden');
+                    side.classList.add('up')
                 }
 
                 lastScrollY = currentScrollY;

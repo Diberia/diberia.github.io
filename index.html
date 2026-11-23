@@ -26,6 +26,20 @@
             </nav>
         </header>
         <div class="layout">
+            <details open class="sidebar">
+                <summary>Contents</summary>
+
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#idea">The Idea</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#cultural">Culture</a></li>
+                    <li><a href="#people">People</a></li>
+                    <li><a href="#food">Food</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </details>
             <main class="content">
                 <article>
                     <h1>Diberian Culture</h1>
@@ -35,21 +49,6 @@
                         <a href="https://en.wiktionary.org/wiki/speculative" target="_blank">speculative</a> <a href="https://en.wikipedia.org/wiki/Linguistic_reconstruction" target="_blank">linguistic reconstruction</a>
                         project.
                     </p>
-
-                    <details open>
-                        <summary>Contents</summary>
-
-                        <ul>
-                            <li><a href="#overview">Overview</a></li>
-                            <li><a href="#idea">The Idea</a></li>
-                            <li><a href="#history">History</a></li>
-                            <li><a href="#cultural">Culture</a></li>
-                            <li><a href="#people">People</a></li>
-                            <li><a href="#food">Food</a></li>
-                            <li><a href="#music">Music</a></li>
-                            <li><a href="#disclaimer">Disclaimer</a></li>
-                        </ul>
-                    </details>
 
                     <section id="overview">
                         <h2>About</h2>
@@ -282,6 +281,10 @@
                         </p>
                     </section>
                 </article>
+                <footer class="copyrightstuff">
+                    Copyright (c) 2026 BeyondRealityOfficial.<br>
+                    Official repository: <a href="https://github.com/Diberia/diberia.github.io/">https://github.com/Diberia/diberia.github.io/</a>
+                </footer>
             </main>
 
             <aside class="infobox">
@@ -338,16 +341,12 @@
                     </tr>
                 </table>
             </aside>
-
-            <footer class="copyrightstuff">
-                Copyright (c) 2026 BeyondRealityOfficial.<br>
-                Official repository: <a href="https://github.com/Diberia/diberia.github.io/">https://github.com/Diberia/diberia.github.io/</a>
-            </footer>
         </div>
 
         <script src="index.js"></script>
         <script>
             const topbar = document.querySelector('.topbar');
+            const side = document.querySelector('.sidebar');
             let lastScrollY = window.scrollY;
 
             window.addEventListener('scroll', () => {
@@ -355,8 +354,10 @@
 
                 if (currentScrollY > lastScrollY && currentScrollY > 80) {
                     topbar.classList.add('hidden');
+                    side.classList.remove('up');
                 } else {
                     topbar.classList.remove('hidden');
+                    side.classList.add('up');
                 }
 
                 lastScrollY = currentScrollY;

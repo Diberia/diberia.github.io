@@ -12,10 +12,17 @@ body {
 
 details {
     display: table;
+    position: sticky;
+    top: 15px;
     border: 1px solid #aaa;
     background: #f8f9fa;
     padding: 12px 25px;
-    margin-bottom: 20px;
+
+    transition: top 0.3s ease;
+}
+
+details.up {
+    top: 75px;
 }
 
 .topbar {
@@ -66,16 +73,18 @@ nav {
 }
 
 .layout {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: 100%;
+    grid-template-columns: 200px minmax(480px, 1fr);
 
     gap: 30px;
 
     padding: 30px;
+
+    align-items: start;
 }
 
 .copyrightstuff {
@@ -151,5 +160,13 @@ h3 {
 
     h2 {
         font-size: 24px;
+    }
+
+    .layout {
+        grid-template-columns: 100%;
+    }
+
+    details {
+        position: static;
     }
 }
