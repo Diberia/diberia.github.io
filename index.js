@@ -1,1 +1,1 @@
-window.alert("This project is unfinished and may change in the future. This site is finished once it is found under 'diberia.org'")
+window.alert("This project is unfinished and may change in the future. This site is finished once this message stops appearing")
