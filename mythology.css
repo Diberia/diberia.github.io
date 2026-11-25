@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+    color: #202122;
+    line-height: 1.6;
+}
+
+details {
+    display: table;
+    position: sticky;
+    top: 15px;
+    border: 1px solid #aaa;
+    background: #f8f9fa;
+    padding: 12px 25px;
+
+    transition: top 0.3s ease;
+}
+
+details.up {
+    top: 75px;
+}
+
+.topbar {
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #a2a9b1;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+    gap: 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.topbar.hidden {
+    transform: translateY(-100%);
+}
+
+.content {
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+* a {
+    color: #3366cc;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+* a:hover {
+    color: #1d3b76;
+    text-decoration: underline;
+}
+
+.layout {
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 200px minmax(480px, 1fr);
+
+    gap: 30px;
+
+    padding: 30px;
+
+    align-items: start;
+}
+
+.copyrightstuff {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #aaa;
+}
+
+h1 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    border-bottom: 1px solid #a2a9b1;
+}
+
+h2 {
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    border-bottom: 1px solid #a2a9b1;
+
+    padding-bottom: 5px;
+
+    margin-top: 40px;
+}
+
+h3 {
+    font-family: Georgia, serif;
+}
+
+.intro {
+    font-size: 18px;
+    color: #54595d;
+}
+
+.latinStuff {
+    font-family: 'Trajan Pro', serif;
+}
+
+@media (max-width: 900px) {
+    .topbar {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        padding: 10px 16px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    nav {
+        margin-left: auto;
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        min-width: 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 32px;
+        overflow-wrap: anywhere;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .layout {
+        grid-template-columns: 100%;
+    }
+
+    details {
+        position: static;
+    }
+}
